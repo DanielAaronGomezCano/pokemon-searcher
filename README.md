@@ -2,7 +2,7 @@
 
 Este proyecto forma parte de una prueba técnica para desarrollador Java Jr. Consiste en una API web construida con Spring Boot que consume datos de [PokéAPI](https://pokeapi.co) y permite consultar información de Pokémon.
 
-👨‍💻 Autor
+👨‍💻 Autor:
 Daniel Aarón Gómez Cano 
 Candidato a Desarrollador Java Jr.
 Proyecto realizado como parte de evaluación para Global Payments Inc.
@@ -26,6 +26,8 @@ Busca un Pokémon por nombre exacto (ejemplo: `pikachu`) y devuelve su informaci
 Busca Pokémon por coincidencia parcial en el nombre.  
 Ejemplo: `/pokemon/search?query=char` podría devolver `charmander`, `charizard`, etc.
 
+Nota: Tarda un poco (alrededor de 3 a 5 min) en desplegar la busqueda. 
+
 ---
 
 ## 🛠️ Tecnologías usadas
@@ -41,15 +43,13 @@ Ejemplo: `/pokemon/search?query=char` podría devolver `charmander`, `charizard`
 
 ## ✅ Requisitos
 
-- JDK 17 (preferentemente [Adoptium Temurin](https://adoptium.net/en-GB/temurin/releases/?version=17))
+- JDK 17 
 - Maven
 - IDE compatible con Java (IntelliJ IDEA recomendado)
 
 ---
 
-## 📦 Instalación y ejecución
-
-## --bash
+```bash
 # 1. Clona el repositorio
 git clone https://github.com/tu_usuario/pokemon-searcher.git
 cd pokemon-searcher
