@@ -18,13 +18,13 @@ public class PokemonController {
         this.pokemonService = pokemonService;
     }
 
-    // 🟢 Endpoint 1: Lista de 100 Pokémon
+    // Endpoint 1: Lista de 100 Pokémon
     @GetMapping("/list")
     public List<PokemonDTO> getList() {
         return pokemonService.getPokemonList(100);
     }
 
-    // 🟢 Endpoint 2: Buscar por nombre exacto
+    // Endpoint 2: Buscar por nombre exacto
     @GetMapping("/{name}")
     public ResponseEntity<?> getPokemonByName(@PathVariable String name) {
         PokemonDTO pokemon = pokemonService.getPokemonByName(name.toLowerCase());
@@ -35,7 +35,7 @@ public class PokemonController {
         return ResponseEntity.ok(pokemon);
     }
 
-    // 🟢 Endpoint 3: Buscar por coincidencia parcial
+    // Endpoint 3: Buscar por coincidencia parcial
     @GetMapping("/search")
     public ResponseEntity<?> searchPokemon(@RequestParam String query,
                                            @RequestParam(defaultValue = "20") int maxResults) {
